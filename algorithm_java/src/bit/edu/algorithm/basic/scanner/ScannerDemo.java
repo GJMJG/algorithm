@@ -1,5 +1,7 @@
 package bit.edu.algorithm.basic.scanner;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class ScannerDemo {

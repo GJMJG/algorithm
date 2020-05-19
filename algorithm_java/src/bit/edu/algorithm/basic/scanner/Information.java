@@ -17,7 +17,7 @@ public class Information {
                 break;
             } else {
                 System.out.println("请输入数字哦！");
-                ID = scan.nextLine();
+                ID = scan.nextLine();//必须加这句话，使得 NextLine 被扫描完
                 continue;
             }
         }
