@@ -1,5 +1,6 @@
 package bit.edu.leecode.longestSubString;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -11,6 +12,7 @@ class Solution {
      * 4. 循环上述过程，直到结尾
      */
     public int lengthOfLongestSubstring(String s) {
+        HashMap<String,String> map = new HashMap<>();
         //定义一个set存放子序列
         Set<Character> data = new HashSet();
         int len = s.length();
