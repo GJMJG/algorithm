@@ -177,3 +177,55 @@ public class Solution2 {
 - 空间复杂度： O（N^2），需要构造二维数组。
 
 ### 中心扩散
+
+#### 思路分析
+
+根据回文串对称的特点，可以从对城中心入手解决。在上面动态规划算法中，需要计算从 i 到 j 的每个子串进行计算，根据对称特点，从对城中心开始往两端扩撒，也能够实现状态的转移。只需要枚举所有的对称中心。
+
+#### 代码实现
+
+```java
+public class Solution3 {
+    public String longestPalindrome(String s) {
+        if (s == null || s.length() == 0) {
+            return "";
+        }
+        // 初始化longestNum 值为 1，单个字符的字符串也是回文串
+        int start = 0, longestNum = 1;
+        for (int i = 0; i < s.length(); ++i) {
+            //枚举所有回文中心，并分别计算回文长度
+            int case1 = extendEdge(s, i, i);
+            int case2 = extendEdge(s, i, i + 1);
+            int len = Math.max(case1, case2);
+            if (len > longestNum) {
+                // 不论是奇数偶数，都可以这样计算
+                start = i - (len - 1) / 2;
+                // 使用长度而不是 end 索引记录的好处是，这样不用计算 end 值
+                longestNum = len;
+            }
+        }
+        //s.subString(start, end +1) 如果采用 start、end索引，这里需要注意
+        return s.substring(start, start + longestNum);
+    }
+
+    public int extendEdge(String s, int left, int right) {
+        int L = left, R = right;
+        if (s.length() == 0 || L > R || L < 0 || R >= s.length()) {
+            return 0;
+        }
+        // 注意先判断是否越界，不能先判断 s.charAt(L) == s.charAt(R)，因为上次循环体中 --L之后，可能已经越界了
+        while (L <= R && L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {
+            --L;
+            ++R;
+        }
+        //在退出循环后，L、R 已经多减了一次，length =(R-1) - (L+1) +1 = R - L -1
+        return R - L - 1;
+    }
+}
+```
+
+#### 复杂度分析
+
+- 时间复杂度 `o(n^2)`，枚举所有对称中心需要 O(N)` 时间，对于每个中心，需要 `O(N/2)`时间判断回文。
+- 空间复杂度 `O(1)`，不需要额外的空间。
+ 
