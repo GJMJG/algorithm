@@ -1,5 +1,7 @@
 package bit.edu.leecode.longestSubString.reverseLinkedList;
 
+import sun.awt.windows.WPrinterJob;
+
 /**
  * Definition for singly-linked list.
  */
@@ -24,6 +26,7 @@ class Solution {
             preNode = currentNode;
             currentNode = nextNode;
         }
+
         return preNode;
     }
 }
