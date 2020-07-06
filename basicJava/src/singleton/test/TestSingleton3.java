@@ -1,4 +1,6 @@
-package singleton;
+package singleton.test;
+
+import singleton.implement.Singleton3;
 
 public class TestSingleton3 {
     public static void main(String[] args) {

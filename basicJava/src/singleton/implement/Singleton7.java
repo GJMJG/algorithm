@@ -1,4 +1,4 @@
-package singleton;
+package singleton.implement;
 
 public class Singleton7 {
     private Singleton7() {

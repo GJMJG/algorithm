@@ -1,4 +1,4 @@
-package singleton;
+package singleton.implement;
 
 public class Singleton6 {
     private static Singleton6 instance;

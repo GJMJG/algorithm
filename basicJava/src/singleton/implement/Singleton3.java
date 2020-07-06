@@ -1,4 +1,4 @@
-package singleton;
+package singleton.implement;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -13,7 +13,7 @@ public class Singleton3 {
     static {
         Properties pro = new Properties();
         try {
-            pro.load(Singleton3.class.getClassLoader().getResourceAsStream("singleton/pro.properties"));
+            pro.load(Singleton3.class.getClassLoader().getResourceAsStream("singleton/implement/pro.properties"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

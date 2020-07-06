@@ -1,4 +1,4 @@
-package singleton;
+package singleton.implement;
 
 /**
  * 懒汉模式：非线程安全

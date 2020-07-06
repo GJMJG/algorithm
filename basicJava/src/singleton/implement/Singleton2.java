@@ -1,4 +1,4 @@
-package singleton;
+package singleton.implement;
 
 /**
  * 饿汉模式：枚举方式保证只有一个实例

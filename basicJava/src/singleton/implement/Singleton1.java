@@ -1,4 +1,4 @@
-package singleton;
+package singleton.implement;
 
 /**
  * 饿汉模式：直接创建
