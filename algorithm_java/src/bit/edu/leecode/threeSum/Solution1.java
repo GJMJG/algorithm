@@ -1,4 +1,4 @@
-package bit.edu.leecode.longestSubString.threeSum;
+package bit.edu.leecode.threeSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,6 +16,7 @@ class Solution1 {
         Arrays.sort(nums);
         int len = nums.length;
         for (int first = 0; first < len; ++first) {
+            // 跳过重复的数字
             if (first != 0 && nums[first] == nums[first - 1]) {
                 continue;
             }
