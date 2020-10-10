@@ -11,25 +11,39 @@ public class Main1 {
     private static boolean has = false;
 
     public static void hasPath(short[][] path, boolean[][] visited, int x, int y) {
+        if(has) return;
         int M = path.length;
         int N = path[0].length;
-        if (visited[M - 1][N - 1] == true) {
+        if(x == M - 1 && y == N - 1){
             has = true;
             return;
         }
 
         if (x < 0 || x >= M) return;
-        if (y < 0 || y > N) return;
+        if (y < 0 || y >= N) return;
         if (visited[x][y]) return;
         if (path[x][y] == 0) return;
 
         visited[x][y] = true;
-        hasPath(path, visited, x, y - step);
-        hasPath(path, visited, x, y + step);
-        hasPath(path, visited, x - step, y);
-        hasPath(path, visited, x + step, y);
+        if(!has) hasPath(path, visited, x, y - step);
+        if(!has) hasPath(path, visited, x, y + step);
+        if(!has) hasPath(path, visited, x - step, y);
+        if(!has) hasPath(path, visited, x + step, y);
+        visited[x][y] = false;
     }
 
+    /**
+     * 输入描述：
+     * 第一行第一个数字为步长 step，接下来两个数字分别表示矩阵行列数 M, N
+     * 接下来 M 行数字，每行有 N 个数字，1 表示可以走，0表示不可以
+     * 例如：
+     * 1 4 4
+     * 1 0 0 0
+     * 1 1 0 1
+     * 0 1 1 0
+     * 0 0 1 1
+     * 返回值： 1 表示有路径， 0 表示无路径
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         step = sc.nextInt();
@@ -49,7 +63,6 @@ public class Main1 {
             }
         }
 
-        //        visited[0][0] = true;
         hasPath(path, visited, 0, 0);
         System.out.println(has ? 1 : 0);
     }
