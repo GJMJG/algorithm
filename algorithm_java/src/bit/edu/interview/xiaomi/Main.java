@@ -1,4 +1,4 @@
-package interview.xiaomi;
+package bit.edu.interview.xiaomi;
 
 import java.util.Scanner;
 

@@ -1,6 +1,4 @@
-package bit.edu.leecode.longestSubString.reverseLinkedList;
-
-import sun.awt.windows.WPrinterJob;
+package bit.edu.leecode.reverseLinkedList;
 
 /**
  * Definition for singly-linked list.

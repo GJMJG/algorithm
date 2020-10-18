@@ -1,6 +1,4 @@
-package bit.edu.leecode.longestSubString.addBinary;
-
-import java.util.BitSet;
+package bit.edu.leecode.addBinary;
 
 class Solution2 {
     public String addBinary(String a, String b) {

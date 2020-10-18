@@ -1,4 +1,4 @@
-package interview.zhongxin;
+package bit.edu.interview.zhongxin.test;
 
 import java.util.HashSet;
 import java.util.Set;

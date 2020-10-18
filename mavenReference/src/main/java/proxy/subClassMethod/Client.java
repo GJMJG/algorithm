@@ -13,7 +13,7 @@ public class Client {
     public static void main(String[] args) {
         final Producer producer = new Producer();
 
-        IProducer cglibProducer = (IProducer) Enhancer.create(producer.getClass(), new MethodInterceptor() {
+        Producer cglibProducer = (Producer) Enhancer.create(producer.getClass(), new MethodInterceptor() {
             @Override
             public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
                 Object returnValue = null;
@@ -24,7 +24,7 @@ public class Client {
                 return returnValue;
             }
         });
-        
+
         cglibProducer.saleProducer(10000f);
     }
 }

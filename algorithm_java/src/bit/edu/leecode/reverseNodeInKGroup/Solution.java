@@ -1,4 +1,4 @@
-package bit.edu.leecode.longestSubString.reverseNodeInKGroup;
+package bit.edu.leecode.reverseNodeInKGroup;
 
 
 class Solution {

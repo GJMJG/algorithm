@@ -3,6 +3,7 @@ package bit.edu.interview.ali;
 import java.util.Scanner;
 
 /**
+ * 阿里实习面试题：第一题
  * <p>
  * 题目大概是这样的。在x，y坐标系内有n个村庄要修水渠，水渠平行于y轴，如何修能够保证水渠到每个村庄的垂直距离和最短？
  * <p>

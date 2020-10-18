@@ -1,4 +1,4 @@
-package bit.edu.leecode.longestSubString.stringToInteger;
+package bit.edu.leecode.stringToInteger;
 
 import java.util.HashMap;
 import java.util.Map;

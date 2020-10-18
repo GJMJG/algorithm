@@ -9,10 +9,10 @@ public class ScanArray {
         System.out.println("Input array and interval with space");
         int[] array = new int[8];
         for (int i = 0; i < array.length; i++) {
-            if(scanner.hasNextInt()){
+            if (scanner.hasNextInt()) {
                 array[i] = scanner.nextInt();
             }
-            array[i] = scanner.nextInt();
+            //           array[i] = scanner.nextInt();
         }
         System.out.println("array after parse: " + Arrays.toString(array));
     }

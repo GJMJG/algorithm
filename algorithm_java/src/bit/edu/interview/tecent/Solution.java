@@ -1,3 +1,5 @@
+package bit.edu.interview.tecent;
+
 /**
  * 腾讯二面：旋转数组的二分查找
  * 789123456

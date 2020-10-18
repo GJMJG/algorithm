@@ -3,13 +3,12 @@ package proxy.subClassMethod;
 /**
  * 一个生产者
  */
-public class Producer implements IProducer {
+public class Producer {
     /**
      * 销售产品
      *
      * @param money
      */
-    @Override
     public void saleProducer(float money) {
         System.out.println("生产者销售产品：" + money);
     }
@@ -19,7 +18,6 @@ public class Producer implements IProducer {
      *
      * @param money
      */
-    @Override
     public void afterService(float money) {
         System.out.println("生产者提供售后，拿到钱：" + money);
     }

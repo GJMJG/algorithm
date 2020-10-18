@@ -1,4 +1,4 @@
-package bit.edu.leecode.longestSubString.containerMax;
+package bit.edu.leecode.containerMax;
 
 class Solution2 {
     public int maxArea(int[] height) {

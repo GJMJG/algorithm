@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/algorithm.iml" filepath="$PROJECT_DIR$/algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithm_java/algorithm_java.iml" filepath="$PROJECT_DIR$/algorithm_java/algorithm_java.iml" />
       <module fileurl="file://$PROJECT_DIR$/basicJava/basicJava.iml" filepath="$PROJECT_DIR$/basicJava/basicJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/designPattern/designPattern.iml" filepath="$PROJECT_DIR$/designPattern/designPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavenReference/mavenReference.iml" filepath="$PROJECT_DIR$/mavenReference/mavenReference.iml" />
     </modules>
   </component>
 </project>

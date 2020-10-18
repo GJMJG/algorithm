@@ -1,4 +1,4 @@
-package bit.edu.leecode.longestSubString.swapNode;
+package bit.edu.leecode.swapNode;
 
 /**
  * 指针方式

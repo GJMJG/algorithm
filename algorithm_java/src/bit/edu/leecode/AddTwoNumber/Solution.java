@@ -1,4 +1,4 @@
-package bit.edu.leecode.longestSubString.AddTwoNumber;
+package bit.edu.leecode.AddTwoNumber;
 
 /**
  * 两数相加

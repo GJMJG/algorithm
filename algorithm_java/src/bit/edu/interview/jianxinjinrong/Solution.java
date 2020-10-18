@@ -1,4 +1,4 @@
-package interview.jianxinjinrong;
+package bit.edu.interview.jianxinjinrong;
 
 /**
  * 给定一个 N * N 有 0、1组成的数组 M[][], M[i][j] 表示 i 和 j 是朋友，已知朋友具有传递性，数组朋友圈的个数

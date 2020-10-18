@@ -1,4 +1,4 @@
-package bit.edu.leecode.longestSubString.addBinary;
+package bit.edu.leecode.addBinary;
 
 class Solution1 {
     public String addBinary(String a, String b) {

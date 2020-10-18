@@ -1,7 +1,4 @@
-package interview.jianxinjinrong;
-
-import java.util.Arrays;
-import java.util.Comparator;
+package bit.edu.interview.jianxinjinrong;
 
 /**
  * 题目给定两个参数，第一个数组表示 车的容量，第二个数字表示乘客数量。

@@ -1,4 +1,4 @@
-package bit.edu.leecode.longestSubString.stringToInteger;
+package bit.edu.leecode.stringToInteger;
 
 /**
  * 方法一：直接扫描
